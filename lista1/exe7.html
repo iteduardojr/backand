@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 7</title>
+
+    <script>
+      const nota1 = parseFloat(prompt("Digite a primeira nota do aluno:"));
+      const nota2 = parseFloat(prompt("Digite a segunda nota do aluno:"));
+
+      const pesoNota1 = 4;
+      const pesoNota2 = 6;
+
+      const media =
+        (nota1 * pesoNota1 + nota2 * pesoNota2) / (pesoNota1 + pesoNota2);
+
+      if (media >= 7) {
+        console.log(
+          "A média final do aluno é: " + media + ". Aprovado!"
+        );
+      } else {
+        console.log(
+          "A média final do aluno é: " + media + ". Reprovado."
+        );
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 6</title>
+    <script>
+    
+      const vendas = parseInt(
+        prompt("Digite o número de carros vendidos pelo vendedor:")
+      );
+
+      const TotalVendas = parseFloat(
+        prompt("Digite o valor total das vendas efetuadas pelo vendedor:")
+      );
+
+      const salario = parseFloat(
+        prompt("Digite o salário do vendedor:")
+      );
+
+      const comissaoCarro = parseFloat(
+        prompt("Digite o valor da comissão por carro vendido:")
+      );
+
+      const comissaoTotal = vendas * comissaoCarro;
+
+      const vendasComComissao = TotalVendas + comissaoTotal;
+
+      const salarioFinal = salario + 0.05 * vendasComComissao;
+
+      console.log(
+        "O salário final do vendedor é: R$" + salarioFinal.toFixed(2)
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
